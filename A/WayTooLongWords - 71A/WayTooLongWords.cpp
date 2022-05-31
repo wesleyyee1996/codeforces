@@ -23,14 +23,12 @@ for (int i=0; i<num_tests; i++) {
     cin >> word;
     len = word.length();
     if (len > 10) {
-        cout << word[0];
-        cout << to_string(len-2);
-        cout << word.back();   
-        cout << endl;     
+        printf("%c%d%c\n", word[0], len-2, word[len-1]);
     }
     else {
         cout << word << endl;
     }
 }
 
+return 0;
 }
