@@ -31,11 +31,27 @@ int main() {
     freopen("output.txt", "w", stdout);
 #endif
 
-string s;
-cin >> s;
+int n;
+scanf("%d", &n);
+// cout << n << endl;
 
-s[0] = toupper(s[0]);
-cout << s;
+int x, y, z;
+int xx, yy, zz;
+xx = 0; yy = 0; zz = 0;
+for (int i=0; i<n; i++) {
+    scanf("%d%d%d", &x, &y, &z);
+    // cout << x << ", " << y << ", " << z << endl;
+    xx += x; yy += y; zz += z;
+}
+
+// cout << xx << ", " << yy << ", " << zz << endl;
+
+if (xx == 0 && yy == 0 && zz == 0) {
+    cout << "YES";
+}
+else {
+    cout << "NO";
+}
 
 return 0;
 }
